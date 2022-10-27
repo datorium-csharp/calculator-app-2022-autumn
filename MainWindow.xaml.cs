@@ -26,8 +26,19 @@ namespace calculator_app_2022_autumn
         }
 
         private void NumericButton_Click(object sender, RoutedEventArgs e)
-        {
-            Display.Text = "1";
+        {           
+            Button button = (Button)sender;          
+
+            if(Display.Text == "0")
+            {
+                Display.Text = (string)button.Content;
+            }
+            else
+            {
+                Display.Text += (string)button.Content;
+            }
+            
+            
         }
 
         private void Display_TextChanged(object sender, TextChangedEventArgs e)
