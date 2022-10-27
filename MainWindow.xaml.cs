@@ -37,7 +37,11 @@ namespace calculator_app_2022_autumn
             {
                 Display.Text += (string)button.Content;
             }
-            
+        }
+
+        private void OperationButton_Click(object sender, RoutedEventArgs e)
+        {
+            Button button = (Button)sender;
             
         }
 

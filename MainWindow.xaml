@@ -18,5 +18,7 @@
         <Button Content="8" HorizontalAlignment="Left" Margin="75,195,0,0" VerticalAlignment="Top" Height="60" Width="60" FontFamily="Roboto" FontSize="22" Background="#FF262598" Foreground="White" Click="NumericButton_Click"/>
         <Button Content="9" HorizontalAlignment="Left" Margin="140,195,0,0" VerticalAlignment="Top" Height="60" Width="60" FontFamily="Roboto" FontSize="22" Background="#FF262598" Foreground="White" Click="NumericButton_Click"/>
         <Button Content="0" HorizontalAlignment="Left" Margin="75,260,0,0" VerticalAlignment="Top" Height="60" Width="60" FontFamily="Roboto" FontSize="22" Background="#FF262598" Foreground="White" Click="NumericButton_Click"/>
+        <Button Content="+" HorizontalAlignment="Left" Margin="230,65,0,0" VerticalAlignment="Top" Height="60" Width="60" FontFamily="Roboto" FontSize="22" Background="#FF4BE015" Foreground="Black" Click="OperationButton_Click"/>
+        <Button Content="+" HorizontalAlignment="Left" Margin="230,65,0,0" VerticalAlignment="Top" Height="60" Width="60" FontFamily="Roboto" FontSize="22" Background="#FF4BE015" Foreground="Black" Click="OperationButton_Click"/>
     </Grid>
 </Window>
