@@ -42,7 +42,15 @@ namespace calculator_app_2022_autumn
 
         private void ClearButton_Click(object sender, RoutedEventArgs e)
         {
-            Display.Text = "0";   
+            Display.Text = "0";
+            if(this.Background == Brushes.Black)
+            {
+                this.Background = Brushes.White;
+            }
+            else
+            {
+                this.Background = Brushes.Black;
+            }    
         }
 
 
