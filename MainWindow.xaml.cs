@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Data;
 
 namespace calculator_app_2022_autumn
 {
@@ -48,7 +49,22 @@ namespace calculator_app_2022_autumn
         private void OperationButton_Click(object sender, RoutedEventArgs e)
         {
             Button button = (Button)sender;
-            
+            Display.Text += (string)button.Content;
+
+        }
+
+        private void ResultButton_Click(object sender, RoutedEventArgs e)
+        {
+            Button button = (Button)sender;
+            //I must calculate the result
+            //Make a lot of comments
+            //Continue with comments
+            DataTable dt = new DataTable();
+
+            string expression = (string)Display.Text;
+
+            var result = dt.Compute(expression, "");
+            Display.Text = result.ToString();
         }
 
         private void Display_TextChanged(object sender, TextChangedEventArgs e)
