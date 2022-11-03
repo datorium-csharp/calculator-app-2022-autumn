@@ -39,6 +39,12 @@ namespace calculator_app_2022_autumn
             }
         }
 
+        private void ClearButton_Click(object sender, RoutedEventArgs e)
+        {
+            Display.Text = "0";   
+        }
+
+
         private void OperationButton_Click(object sender, RoutedEventArgs e)
         {
             Button button = (Button)sender;
